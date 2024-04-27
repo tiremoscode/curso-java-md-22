@@ -16,5 +16,7 @@ public class Calculadora {
         num3.suma();
 
         num4.division();
+
+        num5.multiplicacion();
     }
 }
