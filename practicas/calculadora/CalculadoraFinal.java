@@ -1,25 +1,16 @@
-package practicas.calculadora;
-
 public class CalculadoraFinal {
-    public static void main(String args[]){
-            // Los Valores que haremos calculo.
-            int numero1 = 10;
-            int numero2 = 15;
     
-            // Suma
-            int suma = numero1 + numero2;
-            System.out.println("Suma : "+suma);
+    public static void main(String args[]){
+           
+        Operaciones numero1 = new Operaciones(2, 3);
+        Operaciones numero2 = new Operaciones(2, 3);
+        Operaciones numero3 = new Operaciones(2, 3);
+        Operaciones numero4 = new Operaciones(2, 3);
 
-            // Resta 
-            int resta = numero1 - numero2;
-            System.out.println("Resta "+resta);
-
-            // Multiplicación
-            int multiplicacion = numero1 * numero2;
-            System.out.println("Multiplicación "+multiplicacion);
-
-            // División
-            int division = numero1 / numero2;
-            System.out.println("División "+ division);
+        numero1.division();
+        numero2.suma();
+        numero3.resta();
+        numero4.multiplicacion();
+          
     }
 }
