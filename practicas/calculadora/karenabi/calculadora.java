@@ -9,7 +9,7 @@ public class calculadora {
         num1.suma();
         num2.multiplicacion();
         num3.division();
-        num4. resta();
+        num4.resta();
         
         
         }
