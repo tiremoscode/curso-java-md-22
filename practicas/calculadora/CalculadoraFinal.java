@@ -1,4 +1,4 @@
-package practicas.calculadora;
+ package practicas.calculadora;
 
 public class CalculadoraFinal {
     public static void main(String args[]){
@@ -21,5 +21,7 @@ public class CalculadoraFinal {
             // División
             int division = numero1 / numero2;
             System.out.println("División "+ division);
+
+            
     }
 }
