@@ -1,10 +1,12 @@
+package practicas_programacion.dalel;
+
 public class PokemonHada extends Pokemon implements Elemental {
-    public PokemonHada(String nombre, int nivel){
+    public PokemonHada(String nombre, int nivel) {
         super(nombre, nivel);
     }
 
     @Override
-    public String getElemetType() { 
+    public String getElemetType() {
         return "Hada";
     }
 
@@ -14,9 +16,9 @@ public class PokemonHada extends Pokemon implements Elemental {
     }
 
     @Override
-    public void atacar(){
+    public void atacar() {
         super.atacar();
         System.out.println(getNombre() + " Se disfraza!");
     }
-    
+
 }

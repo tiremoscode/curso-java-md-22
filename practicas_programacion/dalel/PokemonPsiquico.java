@@ -1,10 +1,12 @@
+package practicas_programacion.dalel;
+
 public class PokemonPsiquico extends Pokemon implements Elemental {
-    public PokemonPsiquico(String nombre, int nivel){
+    public PokemonPsiquico(String nombre, int nivel) {
         super(nombre, nivel);
     }
 
     @Override
-    public String getElemetType() { 
+    public String getElemetType() {
         return "Psiquico";
     }
 
@@ -14,9 +16,9 @@ public class PokemonPsiquico extends Pokemon implements Elemental {
     }
 
     @Override
-    public void atacar(){
+    public void atacar() {
         super.atacar();
         System.out.println(getNombre() + " Crea un muro mágico!");
     }
-    
+
 }

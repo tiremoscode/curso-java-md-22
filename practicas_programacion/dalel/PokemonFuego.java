@@ -1,3 +1,5 @@
+package practicas_programacion.dalel;
+
 public class PokemonFuego extends Pokemon implements Elemental {
     public PokemonFuego(String nombre, int nivel) {
         super(nombre, nivel);
@@ -14,9 +16,9 @@ public class PokemonFuego extends Pokemon implements Elemental {
     }
 
     @Override
-    public void atacar(){
-    super.atacar();
-    System.out.println(getNombre() + " Lanza una llamarada!");
+    public void atacar() {
+        super.atacar();
+        System.out.println(getNombre() + " Lanza una llamarada!");
     }
 
 }
