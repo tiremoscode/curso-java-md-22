@@ -13,11 +13,11 @@ public class Pokedex {
         kadabra.atacar();
         alakasam.atacar();
 
-        System.out.println("La edad de charizard es " + charizard.getEdad());
-        System.out.println("La edad de charizard es " + squirtle.getEdad());
-        System.out.println("La edad de charizard es " + mimikyu.getEdad());
-        System.out.println("La edad de charizard es " + kadabra.getEdad());
-        System.out.println("La edad de charizard es " + alakasam.getEdad());
+        System.out.println("La edad de Charizard es " + charizard.getEdad());
+        System.out.println("La edad de Squirtle es " + squirtle.getEdad());
+        System.out.println("La edad de Mimikyu es " + mimikyu.getEdad());
+        System.out.println("La edad de Kadabra es " + kadabra.getEdad());
+        System.out.println("La edad de Alakasam es " + alakasam.getEdad());
         
     }
     
