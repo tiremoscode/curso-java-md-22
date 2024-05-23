@@ -1,6 +1,6 @@
 package ejerciciosClase.practicas_programacion.karen;
 
-public class Pokedex {
+class Pokedex {
     public Pokedex() {
     }
  
