@@ -1,12 +1,12 @@
 package ejerciciosClase.practicas_programacion.karen;
 
-class PokemonBicho extends Pokemon implements Elemental {
-    public PokemonBicho(String nombre, int nivel) {
-       super(nombre, nivel);
+class PokemonVeneno extends Pokemon implements Elemental {
+    public PokemonVeneno(String nombre , int nivel ) {
+       super(nombre , nivel);
     }
  
     public String getElementType() {
-       return "Bicho";
+       return "Veneno";
     }
  
     public int getEdad() {
@@ -18,3 +18,4 @@ class PokemonBicho extends Pokemon implements Elemental {
        System.out.println(this.getNombre() + " atacar!");
     }
  }
+ 
