@@ -1,4 +1,4 @@
-package practicas_programacion.dalel;
+package practicas.pokemon.Esmeralda_Aguilar;
 
 public class PokemonAgua extends Pokemon implements Elemental {
     public PokemonAgua(String nombre, int nivel) {
@@ -18,6 +18,8 @@ public class PokemonAgua extends Pokemon implements Elemental {
     @Override
     public void atacar() {
         super.atacar();
-        System.out.println(getNombre() + " Lanza chorro de agua!");
+        System.out.println(getNombre() + " lanza un chorro de agua! ");
+
     }
+
 }

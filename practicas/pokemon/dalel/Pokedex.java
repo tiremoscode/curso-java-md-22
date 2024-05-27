@@ -1,4 +1,4 @@
-package practicas_programacion.dalel;
+package practicas.pokemon.dalel;
 
 public class Pokedex {
     public static void main(String[] args) {

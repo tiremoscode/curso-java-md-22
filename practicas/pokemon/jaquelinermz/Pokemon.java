@@ -1,10 +1,11 @@
-package practicas_programacion.jaquelinermz;
+package practicas.pokemon.jaquelinermz;
 
-interface Elemental{
+interface Elemental {
     String getElementType();
 
     int getEdad();
 }
+
 public class Pokemon {
     private String nombre;
     private int nivel;
@@ -13,14 +14,17 @@ public class Pokemon {
         this.nombre = nombre;
         this.nivel = nivel;
     }
+
     public void atacar() {
         System.out.println(nombre + "esta en ataque");
     }
+
     public String getNombre() {
         return nombre;
     }
+
     public int getNivel() {
         return nivel;
-        
+
     }
 }

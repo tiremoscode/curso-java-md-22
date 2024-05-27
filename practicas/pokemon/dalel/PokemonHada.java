@@ -1,4 +1,4 @@
-package practicas_programacion.dalel;
+package practicas.pokemon.dalel;
 
 public class PokemonHada extends Pokemon implements Elemental {
     public PokemonHada(String nombre, int nivel) {

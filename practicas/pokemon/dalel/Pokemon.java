@@ -1,4 +1,4 @@
-package practicas_programacion.Esmeralda_Aguilar;
+package practicas.pokemon.dalel;
 
 interface Elemental {
     String getElemetType();
@@ -6,7 +6,7 @@ interface Elemental {
     int getEdad();
 }
 
-class Pokemon {
+public class Pokemon {
     private String nombre;
     private int nivel;
 
@@ -17,7 +17,7 @@ class Pokemon {
     }
 
     public void atacar() {
-        System.out.println(nombre + " esta en ataque ");
+        System.out.println(nombre + " esta en ataque");
     }
 
     public String getNombre() {
@@ -29,4 +29,5 @@ class Pokemon {
         return nivel;
 
     }
+
 }

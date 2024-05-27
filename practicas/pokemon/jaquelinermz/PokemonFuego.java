@@ -1,4 +1,4 @@
-package practicas_programacion.dalel;
+package practicas.pokemon.jaquelinermz;
 
 public class PokemonFuego extends Pokemon implements Elemental {
     public PokemonFuego(String nombre, int nivel) {
@@ -6,19 +6,18 @@ public class PokemonFuego extends Pokemon implements Elemental {
     }
 
     @Override
-    public String getElemetType() {
+    public String getElementType() {
         return "Fuego";
     }
 
     @Override
     public int getEdad() {
-        return 20;
+        return 28;
     }
 
     @Override
     public void atacar() {
         super.atacar();
-        System.out.println(getNombre() + " Lanza una llamarada!");
+        System.out.println(getNombre() + "Lanza una llama!");
     }
-
 }

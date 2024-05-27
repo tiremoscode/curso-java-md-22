@@ -1,4 +1,4 @@
-package practicas_programacion.dalel;
+package practicas.pokemon.dalel;
 
 public class PokemonPsiquico extends Pokemon implements Elemental {
     public PokemonPsiquico(String nombre, int nivel) {
