@@ -1,31 +1,36 @@
 package ejerciciosClase.alumnas;
 
 import java.sql.*;
+import java.util.Scanner;
 
 public class Grupo22 {
-    public static void main(String[] args) {
-        // Parámetros de conexión
-        // JDBC - Java DataBase Connectivity
-        String url = "jdbc:mysql://localhost:3306/grupo22";
-        String usuario = "root";
-        String password = "buttons";
 
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
+    // Parámetros de conexión
+    // JDBC - Java DataBase Connectivity
+    private static String url = "jdbc:mysql://localhost:3306/grupo22";
+    private static String usuario = "root";
+    private static String password = "buttons";
 
-        try {
-            // Establecer la conexión con la bd
-            connection = DriverManager.getConnection(url, usuario, password);
+    public void guardarAlumno(String nombre, int edad) {
+        String queryInsertar = "INSERT INTO alumnas (nombre, edad) VALUES(?, ?)";
+        try (Connection connection = DriverManager.getConnection(url, usuario, password);
+                PreparedStatement preparedStatement = connection.prepareStatement(queryInsertar)) {
+            preparedStatement.setString(1, nombre);
+            preparedStatement.setInt(2, edad);
 
-            // Crear una declaración de datos
-            statement = connection.createStatement();
+            int registrosInsertados = preparedStatement.executeUpdate();
+            System.out.println("Registros insertados: " + registrosInsertados);
 
-            // Ejecutar una consulta SQL
-            // Para validar que mi conexión haya sido correcta.
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-            String query = "SELECT * FROM alumnas";
-            resultSet = statement.executeQuery(query);
+    public void obtenerAlumnos() {
+        String query = "SELECT * FROM alumnas";
+        try (Connection connection = DriverManager.getConnection(url, usuario, password);
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query)) {
 
             // Visualizar los resultados en consola.
             while (resultSet.next()) {
@@ -37,9 +42,27 @@ public class Grupo22 {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
 
+    public static void main(String[] args) {
+        Grupo22 operacionesBD = new Grupo22();
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+
+            System.out.println("Ingresa el nombre de la alumna");
+            String nombreAlumna = scanner.nextLine();
+
+            System.out.println("Ingresa la edad de la alumna");
+            int edadAlumna = scanner.nextInt();
+
+            operacionesBD.guardarAlumno(nombreAlumna, edadAlumna);
+            operacionesBD.obtenerAlumnos();
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
-
+            scanner.close();
         }
     }
 }
