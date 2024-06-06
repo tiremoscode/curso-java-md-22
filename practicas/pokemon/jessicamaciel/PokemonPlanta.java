@@ -1,4 +1,4 @@
-package practicas_programacion.jessicamaciel;
+package practicas.pokemon.jessicamaciel;
 
 public class PokemonPlanta extends Pokemon implements Elemental {
     public PokemonPlanta(String nombre, int nivel) {
@@ -19,5 +19,5 @@ public class PokemonPlanta extends Pokemon implements Elemental {
     public void atacar() {
         super.atacar();
         System.out.println(getNombre() + " Lanza una rama!");
-    }   
+    }
 }

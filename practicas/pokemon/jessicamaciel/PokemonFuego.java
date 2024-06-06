@@ -1,4 +1,4 @@
-package practicas_programacion.jessicamaciel;
+package practicas.pokemon.jessicamaciel;
 
 public class PokemonFuego extends Pokemon implements Elemental {
     public PokemonFuego(String nombre, int nivel) {
@@ -20,8 +20,5 @@ public class PokemonFuego extends Pokemon implements Elemental {
     public void atacar() {
         super.atacar();
         System.out.println(getNombre() + " Lanza una llama!");
-    }   
+    }
 }
-
-    
-

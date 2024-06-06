@@ -1,4 +1,4 @@
-package practicas_programacion.jessicamaciel;
+package practicas.pokemon.jessicamaciel;
 
 public class PokemonAgua extends Pokemon implements Elemental {
     public PokemonAgua(String nombre, int nivel) {
@@ -20,5 +20,5 @@ public class PokemonAgua extends Pokemon implements Elemental {
     public void atacar() {
         super.atacar();
         System.out.println(getNombre() + " Lanza un chorro de agua!");
-    }   
+    }
 }
